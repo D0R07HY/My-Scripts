@@ -1,0 +1,23 @@
+title: Beginner Analysis Script Execution
+id: e7cb8791-96c7-4a66-91a8-11f6c1f54ff6
+status: experimental
+description: Detects execution of beginner-friendly local analysis scripts from this repository via python.exe
+author: D0R07HY
+date: 2026-06-29
+references:
+    - https://sigmahq.io/docs/basics/rules.html
+    - https://sigmahq.io/docs/basics/log-sources.html
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_image:
+        Image|endswith: '\python.exe'
+    selection_commandline:
+        CommandLine|contains:
+            - 'analysis\scripts\hash_report.py'
+            - 'analysis\scripts\basic_strings.py'
+    condition: selection_image and selection_commandline
+falsepositives:
+    - Expected local testing in a learning lab
+level: low
