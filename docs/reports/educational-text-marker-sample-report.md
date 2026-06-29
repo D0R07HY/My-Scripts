@@ -17,10 +17,21 @@ SHA1: cb43d54eb63ef40ff5696e04b24e7544a08ef437
 
 ## Context
 ไฟล์นี้คือไฟล์ README.md เป็นไฟล์ที่อธิบาย workflow และการทำงานต่างๆของรีโปนี้ว่ามีไว้ทำไมมีไว้เพื่ออะไร
+
 สรุปง่ายๆคือเป็นไฟล์ที่เอาไว้มองภาพรวมของรีโป
 
 ## Static Analysis Notes
 จดสิ่งที่เห็นจากการวิเคราะห์แบบไม่รันไฟล์ เช่น: เป็นไฟล์ข้อความที่เป็นภาพรวมของรีโปนี้
 
 path ที่พบ : C:\Users\M S I\Documents\Codex\2026-06-29\d\work\My-Scripts\README.md
+
+## Indicators of Compromise
+filename: README.md
+
+Hashes: MD5 , SHA1 , SHA256 
+
+File paths: C:\Users\M S I\Documents\Codex\2026-06-29\d\work\My-Scripts\README.md
+
+## Detection Ideas
+
 
