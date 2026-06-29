@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Java
+*.class
+*.jar
+
+# Logs และไฟล์ชั่วคราว
+*.log
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# หลีกเลี่ยงการ commit binary หรือ archive ที่อาจมี sample
+*.exe
+*.dll
+*.bin
+*.iso
+*.img
+*.zip
+*.7z
+*.rar
+
+# ข้อมูลแล็บเฉพาะเครื่อง
+lab-data/
+quarantine/
+artifacts/
