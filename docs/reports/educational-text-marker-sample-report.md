@@ -27,6 +27,16 @@ SHA1: cb43d54eb63ef40ff5696e04b24e7544a08ef437
 
 path ที่พบ : C:\Users\M S I\Documents\Codex\2026-06-29\d\work\My-Scripts\README.md
 
+เป็นไฟล์ text/markdown
+
+มี strings จำนวนมาก
+
+พบคำที่น่าสนใจ เช่น Cyber Security, Malware Analysis, IOC, YARA, Sigma
+
+ไม่พบสิ่งที่บ่งชี้ว่าเป็น executable หรือ binary
+
+ไฟล์นี้เหมาะกับการใช้เป็น sample สำหรับฝึก extraction และ pattern matching
+
 ## Indicators of Compromise
 filename: README.md
 
@@ -34,6 +44,18 @@ Hashes: MD5 , SHA1 , SHA256
 
 File paths: C:\Users\M S I\Documents\Codex\2026-06-29\d\work\My-Scripts\README.md
 
+ไม่พบ IOC ที่เป็นอันตราย
+
+พบเพียง artifact พื้นฐาน เช่น filename, path, hash
+
+พบข้อความ marker ที่ใช้เพื่อการศึกษา
+
 ## Detection Ideas
+
+สามารถสร้าง YARA rule ที่ตรวจหาคำว่า FOR EDUCATIONAL PURPOSES ONLY
+
+สามารถใช้คำว่า Malware Analysis และ Cyber Security เป็น text markers
+
+ถ้าไฟล์มีข้อความ marker อย่างน้อย 2 จุด อาจถือว่า match ตามกฎทดลองได้
 
 
