@@ -1,0 +1,4 @@
+This is a safe educational sample file.
+It is used for learning YARA basics only.
+The focus of this repository is Malware Analysis and Cyber Security learning.
+FOR EDUCATIONAL PURPOSES ONLY.

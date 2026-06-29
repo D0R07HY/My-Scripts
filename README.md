@@ -10,9 +10,40 @@
 
 - แบบฝึก Java และ Python ทั่วไป
 - งานวิเคราะห์เชิงป้องกันด้าน malware
-- เอกสาร lab, IOC, และ detection rules
+- เอกสาร lab, IOC, roadmap, glossary, และ detection rules
 
 รีโปนี้ไม่มีไว้สำหรับเผยแพร่ live malware, payload ที่รันได้จริง, persistence tooling, ransomware logic, หรือโค้ดที่มีเป้าหมายเพื่อเข้าถึงหรือทำลายระบบของผู้อื่น
+
+## Start Here
+
+ถ้าคุณเพิ่งเข้ามาในรีโปนี้และยังไม่แน่ใจว่าควรอ่านไฟล์ไหนก่อน ให้เริ่มตามลำดับนี้:
+
+1. `README.md`
+   เพื่อเข้าใจภาพรวมของรีโป
+2. `SECURITY.md`
+   เพื่อเข้าใจขอบเขตและข้อจำกัดด้านความปลอดภัย
+3. `docs/roadmap/roadmap-one-page-summary.md`
+   เพื่อดูภาพรวม roadmap แบบสั้น
+4. `docs/roadmap/student-cybersecurity-roadmap.md`
+   เพื่อดู roadmap แบบเต็ม
+5. `docs/roadmap/roadmap-for-beginners-explained.md`
+   เพื่ออ่านคำอธิบาย roadmap แบบภาษาคนเริ่มต้น
+6. `docs/glossary/beginner-cybersecurity-glossary.md`
+   เพื่อทำความเข้าใจคำศัพท์ที่ใช้ในรีโป
+7. `docs/lab-setup/overview.md`
+   เพื่อดูโครง lab และกติกาความปลอดภัย
+8. `docs/reports/report-template.md`
+   เพื่อดูรูปแบบการเขียน report
+9. `docs/iocs/ioc-template.md`
+   เพื่อดูรูปแบบการเก็บ IOC
+10. `analysis/scripts/hash_report.py` และ `analysis/scripts/basic_strings.py`
+    เพื่อเริ่มใช้เครื่องมือช่วยวิเคราะห์ตัวแรกของรีโป
+
+ถ้าคุณเป็นมือใหม่มาก ๆ แนะนำให้อ่าน 3 ไฟล์นี้ก่อน:
+
+- `docs/roadmap/roadmap-one-page-summary.md`
+- `docs/roadmap/roadmap-for-beginners-explained.md`
+- `docs/glossary/beginner-cybersecurity-glossary.md`
 
 ## โครงสร้างรีโป
 
@@ -23,9 +54,12 @@
 |-- LICENSE
 |-- .gitignore
 |-- docs/
+|   |-- glossary/
+|   |-- issues/
+|   |-- iocs/
 |   |-- lab-setup/
 |   |-- reports/
-|   `-- iocs/
+|   `-- roadmap/
 |-- analysis/
 |   `-- scripts/
 |-- detections/
@@ -54,11 +88,11 @@
 
 ### `docs/`
 
-ใช้เก็บเอกสารตั้งแล็บ รายงานผลการวิเคราะห์ บันทึก IOC และโน้ตจากการศึกษา
+ใช้เก็บเอกสารตั้งแล็บ รายงานผลการวิเคราะห์ บันทึก IOC roadmap คำศัพท์ และ issue templates
 
 ### `analysis/`
 
-ใช้เก็บสคริปต์ช่วยวิเคราะห์เชิงรับ เช่น hash, metadata, strings, import inspection, และ report helpers
+ใช้เก็บสคริปต์ช่วยวิเคราะห์เชิงรับ เช่น hash, metadata, strings, และ report helpers
 
 ### `detections/`
 
